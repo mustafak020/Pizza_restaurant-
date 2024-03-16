@@ -1,0 +1,610 @@
+* {
+  font-family: ggsans;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  scroll-behavior: smooth;
+}
+body {
+  max-width: 1320px;
+  margin: auto;
+  background-color: #333;
+  color: whitesmoke;
+}
+.italic_color {
+  font-style: italic;
+  color: green;
+}
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+/* NAV STYLES STARTS HERE............................... */
+
+.nav {
+  width: 100%;
+  height: fit-content;
+  padding: 25px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .nav_header {
+  font-size: 13px;
+}
+.nav .nav_links {
+  display: none;
+}
+.nav .nav_message {
+  border: 1px solid whitesmoke;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 12px;
+  display: none;
+}
+.nav i {
+  font-size: larger;
+}
+
+/* NAV STYLES ENDS HERE................................... */
+
+.main {
+  width: 100%;
+  height: fit-content;
+}
+.main .section_bottom_bg {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  background-image: url("./assets/about_first_bottom_bg.jpg");
+  background-position: top;
+  background-size: cover;
+}
+.bottom_bg_second {
+  background-image: url("./assets/about_second_bottom_bg.jpg") !important;
+  margin-top: 30px;
+  background-position: center !important;
+}
+.bottom_bg_third {
+    width: 100%;
+  height: 300px !important;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.bottom_bg_third h2{
+    z-index: 100;
+    font-size: 20px;
+    text-align: center;
+}
+.bottom_bg_third a {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid white;
+  outline-offset: 5px;
+  font-weight: 700;
+  z-index: 100;
+}
+.bottom_bg_third img {
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  filter: brightness(40%);
+}
+/* HERO SECTION STYLES STARTS HERE......................... */
+
+.main .hero {
+  width: 100%;
+  height: fit-content;
+  padding: 20px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  position: relative;
+  color: #ffffff;
+  overflow: hidden;
+}
+.main .hero .hero_bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  z-index: -1;
+  filter: brightness(45%);
+}
+.main .hero .hero_header {
+  font-size: 60px;
+}
+.main .hero .hero_info {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 15px;
+}
+.main .hero .hero_info .hero_info_text {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+.main .hero .hero_info .contact {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HERO SECTIN STYLES ENDS HERE.......................... */
+
+/* ABOUT FIRST SECTION STYLES STARTS HERE................ */
+
+.main .about_first {
+  width: 100%;
+  height: fit-content;
+  padding: 20px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+  color: #ffffff;
+  margin-top: 50px;
+}
+.main .about_first .about_first_info {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+.main .about_first .about_first_info .info_text p {
+  margin-bottom: 30px;
+}
+.main .about_first .about_first_info .info_img {
+  width: 100%;
+  height: fit-content;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.main .about_first .about_first_info .info_img img {
+  width: 100%;
+}
+
+/* ABOUT FIRST SECTION STYLES ENDS HERE.................... */
+
+/* ABOUT SECOND SECTION STYLES STARTS HERE................. */
+
+.about_second {
+  width: 100%;
+  height: fit-content;
+  padding: 20px 14px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.about_second .about_second_info .about_second_list {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about_second .about_second_info .about_second_list li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  word-break: break-all;
+  border-bottom: 1px solid rgb(126, 124, 124);
+  padding: 5px 0px;
+}
+
+/* ABOUT SECOND SECTION STYLES ENDS HERE................... */
+
+/* ABOUT THIRD SECTION STYLES STARTS HERE.................. */
+
+.about_third {
+  width: 100%;
+  height: fit-content;
+  padding: 20px 14px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.about_third .about_third_info {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.about_third .about_third_info .info_text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.about_third .about_third_info .info_text h3 {
+  color: green;
+}
+
+/* ABOUT THIRD SECTION STYLES ENDS HERE................... */
+
+/* ABOUT FOURTH SECTION STYLES STARTS HERE................. */
+
+.about_fourth {
+  width: 100%;
+  height: fit-content;
+  padding: 20px 14px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.about_fourth .about_fourth_text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about_fourth .about_fourth_text .about_fourth_list {
+  width: 100%;
+  height: fit-content;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about_fourth .about_fourth_text .about_fourth_list li {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.about_fourth .fourth_img {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  background-image: url("./assets/about_fourth_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 50px;
+}
+
+/* ABOUT FOURTH SECTION STYLES ENDS HERE................... */
+
+/* MENU SECTION STYLES STARTS HERE......................... */
+
+.menu {
+  width: 100%;
+  height: fit-content;
+  padding: 20px 14px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.menu .menu_header {
+  margin: auto;
+}
+.menu .menu_info {
+  width: 100%;
+  height: 100%;
+}
+.menu .menu_info .menu_info_list li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+.menu .menu_info .menu_info_list .menu_bright_item {
+  background-color: rgb(150, 127, 97);
+}
+.menu .menu_info .menu_info_list .menu_bright_item span {
+  color: white;
+}
+
+/* MENU SECTION STYLES ENDS HERE........................... */
+
+/* FOOTER STYLES STARTS HERE............................... */
+
+.footer {
+  width: 100%;
+  height: fit-content;
+  padding: 20px 14px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer .footer_header {
+  margin: auto;
+}
+.footer .footer_info {
+  text-align: center;
+}
+.footer .footer_contact .footer_form {
+  background-color: white;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+}
+.footer .footer_contact .footer_form input,
+textarea {
+  border: none;
+  border-bottom: 1px solid #333;
+  padding: 10px 15px;
+  outline: none;
+}
+
+.footer .footer_contact .form_button {
+  border-radius: 20px;
+  margin-top: 20px;
+  border: none !important;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+}
+.footer .footer_social {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.footer .footer_social .social_links {
+  font-size: 13px;
+  display: flex;
+  gap: 5px;
+}
+
+/* FOOTER SECTION STYLES ENDS HERE......................... */
+
+/* RESPONSIVE DESIGN STARTS HERE........................... */
+
+@media screen and (min-width: 767px) {
+  /* HERO RESPONSIVE STARTS HERE */
+
+  .main .hero {
+    align-items: end;
+    width: 100%;
+    padding: 50px 20px;
+  }
+  .main .hero .hero_header {
+    width: 82%;
+    height: fit-content;
+    font-size: 100px;
+  }
+  .main .hero .hero_info {
+    width: 100%;
+    flex-direction: row;
+  }
+  .main .hero .hero_info .hero_info_text {
+    max-width: 400px;
+    align-items: start;
+    text-align: start;
+  }
+
+  /* HERO RESPONSIVE ENDS HERE */
+
+  /* ABOUT FIRST RESPONSIVE STARTS HERE */
+
+  .main .about_first {
+    padding: 60px 0px 60px 60px;
+    align-items: start;
+    margin-top: 0;
+  }
+  .main .about_first .about_first_header {
+    font-size: 30px;
+  }
+  .main .about_first .about_first_info {
+    flex-direction: row;
+  }
+  .main .about_first .about_first_info .info_text {
+    width: 50%;
+  }
+  .main .about_first .about_first_info .info_img {
+    width: 50%;
+    border-radius: 0%;
+  }
+
+  /* ABOUT FIRST RESPONSIVE ENDS HERE */
+
+  /* ABOUT SECOND RESPONSIVE STARTS HERE */
+
+  .about_second {
+    width: 100%;
+    padding: 70px 100px;
+    margin-top: 0;
+    align-items: start;
+  }
+  .about_second .about_second_header {
+    font-size: 30px;
+  }
+  .about_second .about_second_info {
+    width: 100%;
+    font-size: 22px;
+  }
+
+  /* ABOUT SECOND RESPONSIVE ENDS HERE */
+
+  /* ABOUT THIRD RESPONSIVE STARTS HERE */
+
+  .about_third {
+    align-items: start;
+    padding: 60px 50px;
+    margin-top: 0;
+  }
+  .about_third .header {
+    font-size: 40px;
+  }
+  .about_third .about_third_info {
+    flex-direction: row;
+  }
+  .bottom_bg_third .header{
+    font-size: 30px;
+  }
+
+  /* ABOUT THIRD RESPONSIVE ENDS HERE */
+
+  /* ABOUT FOURTH RESPONSIVE STARTS HERE */
+
+  .about_fourth{
+    padding: 60px 50px;
+    margin-top: 0;
+  }
+  .about_fourth .header{
+    font-size: 30px;
+  }
+  .about_fourth .fourth_container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  .about_fourth .fourth_container .about_fourth_list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .about_fourth .fourth_container .about_fourth_list li{
+    width: 48%;
+  }
+
+  /* ABOUT FOURTH RESPONSIVE ENSD HERE */
+
+  /* MENU RESPONSIVE STARTS HERE */
+
+  .menu{
+    padding: 60px;
+    margin-top: 0;
+  }
+  .menu .header{
+    font-size: 40px;
+  }
+
+  /* MENU RESPONSIVE ENDS HERE */
+
+  /* FOOTER RESPONSIVE STARTS HERE */
+
+  .footer{
+    margin-top: 0%;
+    padding: 60px 60px 20px 60px;
+  }
+  .footer .header{
+    font-size: 30px;
+  }
+  .footer .footer_info{
+    max-width: 500px;
+    font-size: 20px;
+    margin: auto;
+  }
+  .footer .footer_contact .footer_form{
+    width: 60%;
+    margin: auto;
+  }
+  .footer .footer_social{
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  /* FOOTER RESPONSIVE ENDS HERE */
+}
+
+
+@media screen and (min-width: 999px) {
+    .nav .nav_header{
+        font-size: 20px;
+    }
+    .nav .nav_links {
+        display: flex;
+        gap: 50px;
+        font-size: 18px;
+    }
+    .nav i{
+        display: none;
+    }
+    .nav .nav_message{
+        display: block;
+        font-size: 15px;
+    }
+    .main .hero {
+        width: 100%;
+        height: 600px;
+        align-items: start;
+        padding: 100px;
+        justify-content: start;
+    }
+    .main .hero h1{
+        width: 90%;
+        margin: 0 auto;
+        letter-spacing: 10px;
+    }
+    .main .hero .hero_info{
+        position: relative;
+        height: fit-content;
+        gap: 0;
+        width: 90%;
+        margin: 0;
+    }
+    .main .hero .hero_info a{
+        position: absolute;
+        left: 90px;
+        top: 0%;
+    }
+    .main .hero .hero_info .hero_info_text{
+        flex-direction: column-reverse;
+        position: absolute;
+        top: -100%;
+        right: 0;
+    }
+    .main .hero .hero_info .hero_info_text h3{
+        font-size: 40px;
+    }
+    .main .hero .hero_info .hero_info_text p{
+        font-size: 20px;
+    }
+
+    .about_fourth{
+        padding: 100px;
+    }
+    .about_fourth .fourth_container{
+        align-items: start;
+    }
+    .about_fourth .fourth_container .about_fourth_text{
+        margin-top: 50px;
+    }
+    .footer .footer_contact .footer_form{
+        width: 40%;
+    }
+}
